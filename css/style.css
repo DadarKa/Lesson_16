@@ -558,6 +558,7 @@ body {
 }
 .form-customers__buttons {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   column-gap: 23px;
 }
