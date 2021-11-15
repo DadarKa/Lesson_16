@@ -301,6 +301,7 @@ body {
   text-align: center;
   padding: 40px 0px 0px 0px;
   align-self: center;
+ position: relative;
 }
 .appointment__description *:not(:last-child) {
   margin: 0px 0px 46px 0px;
