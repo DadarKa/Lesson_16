@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson_16_form</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div id="#top"></div>
+    </header>
+    <main class="main">
+      <div class="appointment">
+        <div class="appointment__container">
+          <div class="appointment__content">
+            <div class="appointment__body">
+              <div class="appointment__form form">
+                <div class="appointment__title">Make an appointment</div>
+                <form class="form" action="#">
+                  <div class="form__flex">
+                    <input class="form__username" name="username" required type="text" autocomplete="off" value=""
+                      placeholder="Name">
+                  </div>
+                  <div class="form__flex">
+                    <input class="form__email" name="email" required value="" autocomplete="off" type="email"
+                      placeholder="Email">
+                  </div>
+                  <div class="form__flex">
+                    <input class="form__phone" name="tel" maxlength="10" required value="" type="tel"
+                      placeholder="Phone Number">
+                  </div>
+                  <div class="form__flex">
+                    <select class="form__select" name="select">
+                      <option selected hidden value="">Select Service</option>
+                      <option value="1">Pet Boarding (No Cages)</option>
+                      <option value="2">Pet Daycare</option>
+                      <option value="3">Pet Day Spa & Grooming</option>
+                      <option value="4">Custom Meal Plans</option>
+                      <option value="5">Pet Training</option>
+                      <option value="6">Shop Our Store!</option>
+                    </select>
+                  </div>
+                  <div class="form__textareas">
+                    <textarea class="form__textarea" name="text" required autocomplete="off"
+                      placeholder="Tell us about your puppers include his/her name"></textarea>
+                  </div>
+                  <div class="form__buttons"><button class="form__button" type="submit">Make an Appointment</button>
+                  </div>
+                </form>
+              </div>
+              <div class="appointment__description">
+                <div class="appointment__service">Maxime placeat facere possimus omnis</div>
+                <div class="appointment__value">5,700+</div>
+                <div class="appointment__sub-service">customers served</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="summary">
+        <div class="summary__container">
+          <div class="summary__content content-summary">
+            <div class="content-summary__body">
+              <h2 class="content-summary__title">Summary</h2>
+              <div class="content-summary__sub-title">Estimate Shipping and Tax</div>
+              <div class="content-summary__text">Enter your destination to get a shipping estimate.</div>
+            </div>
+            <div class="content-summary__form form-summary">
+              <form class="form-summary" action="#">
+                <div class="form-summary__line">
+                  <label for="select_count" class="form-summary__label">Country</label>
+                  <select name="select" id="select_count" class="form-summary__select">
+                    <option value="1" selected>Australia</option>
+                    <option value="2">Ukraine</option>
+                    <option value="3">Brazil</option>
+                  </select>
+                </div>
+                <div class="form-summary__line">
+                  <label for="select_state" class="form-summary__label">State/Province</label>
+                  <input id="select_state" type="text" required autocomplete="off" value="" class="form-summary__input">
+                </div>
+                <div class="form-summary__line">
+                  <label for="select_zip" class="form-summary__label">Zip/Postal Code</label>
+                  <input id="select_zip" type="number" required value="" autocomplete="off" class="form-summary__input">
+                </div>
+                <div class="form-summary__radio">
+                  <div class="radiobuttons">
+                    <div class="radiobuttons__title">Standard Rate</div>
+                    <div class="radiobuttons__item">
+                      <input id="price_1" type="radio" name="color" class="radiobuttons__input">
+                      <label for="price_1" class="radiobuttons__label">Price may vary depending on the item/destination.
+                        Shop Staff will contact you. $21.00</label>
+                    </div>
+                    <div class="radiobuttons__title">Pickup from store</div>
+                    <div class="radiobuttons__item">
+                      <input id="price_2" type="radio" name="color" class="radiobuttons__input">
+                      <label for="price_2" class="radiobuttons__label">1234 Street Adress City Address, 1234
+                        $0.00</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-summary__line">
+                  <div class="content-summary__sub-title_margin">Apply Discount Code</div>
+                  <label for="select_code" class="form-summary__label">Enter discount code</label>
+                  <input id="select_code" type="text" autocomplete="off" class="form-summary__input"
+                    placeholder="Enter Discount code">
+                </div>
+                <button class="form-summary__button" type="submit">Apply Discount</button>
+              </form>
+            </div>
+          </div>
+          <div class="summary__content customers">
+            <div class="customers__content">
+              <div class="customers__body">
+                <h2 class="customers__title">Registered Customers</h2>
+                <div class="customers__sub-title">If you have an account, sign in with your email address.</div>
+              </div>
+              <div class="customers__form form-customers">
+                <form class="form-customers">
+                  <div class="form-customers__line">
+                    <label for="form_email" class="form-customers__label">Email <span>*</span></label>
+                    <input id="form_email" name="email" required type="email" value="" autocomplete="off"
+                      class="form-customers__input" placeholder="Your Name">
+                  </div>
+                  <div class="form-customers__line">
+                    <label for="form_password" class="form-customers__label">Password <span>*</span></label>
+                    <input id="form_password" name="password" required type="password" value="" autocomplete="off"
+                      class="form-customers__input" placeholder="Your Password">
+                  </div>
+                  <button class="form-customers__button" type="submit">Sign In</button>
+                  <a href="#" target="_blank" class="form-customers__link">Forgot Your Password?</a>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="summary__content shipping">
+            <div class="shipping__content">
+              <h3 class="shipping__title">Shipping Address</h3>
+              <div class="shipping__form form-shipping">
+                <form class="form-shipping">
+                  <div class="form-shipping__line">
+                    <label for="form_mail" class="form-shipping__label">Email Address <span>*</span></label>
+                    <input id="form_mail" name="email" required type="email" value="" autocomplete="off"
+                      class="form-shipping__input" placeholder="">
+                  </div>
+                  <div class="form-shipping__checkout">You can create an account after checkout.</div>
+                  <div class="form-shipping__line">
+                    <label for="form_f-name" class="form-shipping__label">First Name <span>*</span></label>
+                    <input id="form_f-name" name="username" required type="text" value="" autocomplete="off"
+                      class="form-shipping__input" placeholder="">
+                  </div>
+                  <div class="form-shipping__line">
+                    <label for="form_l-name" class="form-shipping__label">Last Name <span>*</span></label>
+                    <input id="form_l-name" name="username" required type="text" value="" autocomplete="off"
+                      class="form-shipping__input" placeholder="">
+                  </div>
+                  <div class="form-shipping__line">
+                    <label for="form_company" class="form-shipping__label">Company <span>*</span></label>
+                    <input id="form_company" name="company" required type="text" value="" autocomplete="off"
+                      class="form-shipping__input" placeholder="">
+                  </div>
+                  <div class="form-shipping__line">
+                    <label for="form_address" class="form-shipping__label">Street Address <span>*</span></label>
+                    <input id="form_address" name="address" required type="text" value="" autocomplete="off"
+                      class="form-shipping__input" placeholder="">
+                    <input id="form_addres" name="address" required type="text" value="" autocomplete="off"
+                      class="form-shipping__input" placeholder="">
+                  </div>
+                  <div class="form-shipping__line">
+                    <label for="form_city" class="form-shipping__label">City <span>*</span></label>
+                    <input id="form_city" name="city" required type="text" value="" autocomplete="off"
+                      class="form-shipping__input" placeholder="">
+                  </div>
+                  <div class="form-shipping__line">
+                    <label for="form_state" class="form-shipping__label">State/Province <span>*</span></label>
+                    <select name="select" id="form_state" class="form-shipping__select">
+                      <option selected hidden value="">Please, select a region, state or province</option>
+                      <option value="1">Province_1</option>
+                      <option value="2">Province_2</option>
+                    </select>
+                  </div>
+                  <div class="form-shipping__line">
+                    <label for="form_zip" class="form-shipping__label">Zip/Postal Code <span>*</span></label>
+                    <input id="form_zip" name="zip" required type="number" value="" autocomplete="off"
+                      class="form-shipping__input" placeholder="">
+                  </div>
+                  <div class="form-shipping__line">
+                    <label for="form_country" class="form-shipping__label">Country <span>*</span></label>
+                    <select name="select" id="form_country" class="form-shipping__select">
+                      <option selected value="1">United States</option>
+                      <option value="2">Ukraine</option>
+                    </select>
+                  </div>
+                  <div class="form-shipping__line">
+                    <label for="form_phone" class="form-shipping__label">Phone Number <span>*</span></label>
+                    <input id="form_phone" name="phone" required type="tel" maxlength="10" value="" autocomplete="off"
+                      class="form-shipping__input" placeholder="">
+                  </div>
+                  <div class="form-shipping__radio">
+                    <div class="radiobuttons">
+                      <div class="radiobuttons__title">Standard Rate</div>
+                      <div class="radiobuttons__item">
+                        <input id="price_3" type="radio" name="color" class="radiobuttons__input">
+                        <label for="price_3" class="radiobuttons__label">Price may vary depending on the
+                          item/destination.
+                          Shop Staff will contact you. $21.00</label>
+                        <div class="radiobuttons__price">$21.00</div>
+                      </div>
+                      <div class="radiobuttons__title">Pickup from store</div>
+                      <div class="radiobuttons__item">
+                        <input id="price_4" type="radio" name="color" class="radiobuttons__input">
+                        <label for="price_4" class="radiobuttons__label">1234 Street Adress City Address, 1234
+                          $0.00</label>
+                        <div class="radiobuttons__price">$0.00</div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="form-shipping__button" type="submit">Next</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__content"><a href="#top">top</a></div>
+    </footer>
+  </div>
+</body>
+
+</html>

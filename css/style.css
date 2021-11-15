@@ -1,0 +1,742 @@
+/* Для шриштів: налаштування шрифта+кирилиця, підключаємо завжди! Чистимо непотрібні розміри шрифта в посиланні, для кращої оптимізації.
+ &display=swap&subset=cyrillic-ext */
+
+/*@import url("https://fonts.googleapis.com/css?family=Chivo:300,300italic,regular,italic,700,700italic&display=swap&subset=cyrillic-ext");*/
+/*@import url("https://fonts.googleapis.com/css?family=Poppins:300,300italic,regular,italic,700,700italic&display=swap&subset=cyrillic-ext");*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap&subset=cyrillic-ext");
+
+/*@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}*/
+/*@font-face {
+  font-family: "Polaris";
+  src: url("../fonts/Polaris.woff2") format("woff2"), url("../fonts/Polaris.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}*/
+/*@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-CaptionBold.woff2") format("woff2"), url("../fonts/PTSans-CaptionBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-Caption.woff2") format("woff2"), url("../fonts/PTSans-Caption.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}*/
+
+/* Обнулення СТИЛІВ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 1;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255, 1);
+}
+.main {
+  flex: 1 1 auto;
+}
+.footer {
+  padding: 20px 0px 20px 20px;
+  background-color: #5d62b5;
+}
+.footer__content {
+  text-align: center;
+}
+.footer a {
+  color: #f2726f;
+}
+
+/* --------------- */
+[class*="__container"] {
+  box-sizing: content-box;
+  max-width: 1020px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.appointment {
+  padding: 130px 0px 210px 0px;
+  background: url(../img/CarRepairandDoggie/make_an/BG.png) 100% / cover no-repeat;
+  color: #ffffff;
+}
+.appointment__container {
+}
+.appointment__content {
+  position: relative;
+}
+.appointment__content::before {
+  content: "";
+  width: 335px;
+  height: 566px;
+  background: url(../img/CarRepairandDoggie/make_an/Circles.svg) 0 0 no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-38%, 20%);
+}
+.appointment__content::after {
+  content: "";
+  width: 642px;
+  height: 726px;
+  background: url(../img/CarRepairandDoggie/make_an/Blob.png) 0 100% no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  transform: translate(-35%, 10%);
+}
+.appointment__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.appointment__form {
+  flex: 0 1 585px;
+  background-color: #5d62b5;
+  border-radius: 40px;
+  padding: 76px 57px;
+  position: relative;
+  z-index: 3;
+}
+
+.appointment__title {
+  flex: 0 1 100%;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.appointment__title:not(:last-child) {
+  margin: 0px 0px 48px 0px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px -11px 0px -11px;
+}
+.form__flex {
+  padding: 0px 11px 0px 11px;
+}
+
+.form__flex:not(:last-child) {
+  margin-bottom: 22px;
+}
+.form__username {
+  background-color: transparent;
+  padding: 15px 23px 15px 23px;
+  border: 1px solid rgb(255, 255, 255, 1);
+  border-radius: 10px;
+  color: rgb(255, 255, 255, 1);
+}
+.form__username::placeholder {
+  color: rgb(255, 255, 255, 1);
+}
+.form__username:focus {
+  outline: 1px solid #fff;
+  box-shadow: inset 1px 1px 10px #fff;
+}
+.form__email {
+  background-color: transparent;
+  padding: 15px 23px 15px 23px;
+  border: 1px solid rgb(255, 255, 255, 1);
+  border-radius: 10px;
+  color: rgb(255, 255, 255, 1);
+}
+.form__email::placeholder {
+  color: rgb(255, 255, 255, 1);
+}
+.form__email:focus {
+  outline: 1px solid #fff;
+  box-shadow: inset 1px 1px 10px #fff;
+}
+.form__phone {
+  background-color: transparent;
+  padding: 15px 23px 15px 23px;
+  border: 1px solid rgb(255, 255, 255, 1);
+  border-radius: 10px;
+  color: rgb(255, 255, 255, 1);
+}
+.form__phone:focus {
+  outline: 1px solid #fff;
+  box-shadow: inset 1px 1px 10px #fff;
+}
+.form__phone::placeholder {
+  color: rgb(255, 255, 255, 1);
+}
+.form__select {
+  background-color: transparent;
+  padding: 15px 23px 15px 23px;
+  border: 1px solid rgb(255, 255, 255, 1);
+  border-radius: 10px;
+  color: rgb(255, 255, 255, 1);
+  cursor: pointer;
+}
+.form__select option {
+  color: #5d62b5;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.form__select:focus {
+  outline: 1px solid #fff;
+  box-shadow: inset 1px 1px 10px #fff;
+}
+.form__textareas {
+  flex: 0 1 100%;
+  padding: 0px 11px 0px 11px;
+}
+.form__textarea {
+  background-color: transparent;
+  padding: 15px;
+  border: 1px solid rgb(255, 255, 255, 1);
+  border-radius: 10px;
+  resize: none;
+  width: 100%;
+  height: 180px;
+  color: rgb(255, 255, 255, 1);
+}
+.form__textarea::placeholder {
+  color: rgb(255, 255, 255, 1);
+}
+.form__textarea:focus {
+  outline: 1px solid #fff;
+  box-shadow: inset 1px 1px 10px #fff;
+}
+.form__textareas:not(:last-child) {
+  margin: 0px 0px 30px 0px;
+}
+.form__buttons {
+  padding: 0px 11px 0px 11px;
+  display: flex;
+  flex: 0 1 100%;
+  justify-content: flex-end;
+}
+.form__button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #f2726f;
+  padding: 12px 34px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.form__button:focus {
+  outline: 1px solid #f2726f;
+  box-shadow: inset 1px 1px 10px #fff;
+}
+.form__button:hover {
+  background-color: #ffffff;
+  color: #f2726f;
+  border: 1px solid #f2726f;
+}
+
+.appointment__description {
+  flex: 0 1 324px;
+  font-weight: 900;
+  text-align: center;
+  padding: 40px 0px 0px 0px;
+  align-self: center;
+}
+.appointment__description *:not(:last-child) {
+  margin: 0px 0px 46px 0px;
+}
+.appointment__service {
+  font-size: 30px;
+  line-height: 1.2;
+}
+.appointment__value {
+  font-size: 96px;
+  line-height: 0.58;
+}
+.appointment__sub-service {
+  font-size: 19px;
+  line-height: 1.36;
+}
+
+.summary {
+  color: #000;
+  background-color: #ececec;
+  padding: 50px 0px 0px 0px;
+}
+.summary__container {
+  display: flex;
+  flex-direction: column;
+}
+.summary__content {
+  display: flex;
+  flex-direction: column;
+}
+.content-summary {
+  flex: 0 1 auto;
+  max-width: 445px;
+  background-color: #f5f7ff;
+  padding: 18px 30px 30px 29px;
+}
+.content-summary__body {
+  line-height: 1.5;
+}
+.content-summary__body:not(:last-child) {
+  margin-bottom: 12px;
+}
+.content-summary__title {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0px 0px 19px 0px;
+}
+.content-summary__sub-title {
+  font-size: 18px;
+  margin: 0px 0px 12px 0px;
+}
+.content-summary__text {
+  font-size: 14px;
+  color: #666666;
+}
+.content-summary__form {
+}
+.form-summary {
+}
+.form-summary__line {
+  display: flex;
+  flex-direction: column;
+}
+.form-summary__line:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.form-summary__label {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 2.7;
+}
+.form-summary__select {
+  padding: 15px 17px 15px 17px;
+  font-size: 14px;
+  line-height: 1.42;
+  border: 1px solid #a2a6b0;
+  border-radius: 4px;
+  margin: 0px 0px 5px 0px;
+  cursor: pointer;
+}
+.form-summary__select:focus {
+  outline: 1px solid #a2a6b0;
+  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.376);
+  cursor: pointer;
+}
+
+.form-summary__input {
+  padding: 15px 17px 15px 17px;
+  font-size: 14px;
+  line-height: 1.42;
+  border: 1px solid #a2a6b0;
+  border-radius: 4px;
+}
+
+.form-summary__input:focus {
+  outline: 1px solid #a2a6b0;
+  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.376);
+}
+.form-summary__input::placeholder {
+  color: #a2a6b0;
+}
+.form-summary__radio {
+}
+.form-summary__radio:not(:first-child) {
+  margin-top: 17px;
+}
+.form-summary__radio:not(:last-child) {
+  margin-bottom: 35px;
+}
+.radiobuttons {
+}
+
+.radiobuttons__item {
+  position: relative;
+}
+.radiobuttons__item:not(:last-child) {
+  margin: 0px 0px 5px 0px;
+}
+.radiobuttons__title {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 2.1;
+}
+
+.radiobuttons__input {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.radiobuttons__input:focus + .radiobuttons__label::before {
+  outline: 2px solid #0156ff;
+}
+.radiobuttons__input:checked + .radiobuttons__label::after {
+  transform: scale(1);
+}
+.radiobuttons__label {
+  display: inline-flex;
+  font-size: 14px;
+  line-height: 1.42;
+  cursor: pointer;
+  column-gap: 8px;
+  position: relative;
+}
+.radiobuttons__label::before {
+  content: "";
+  cursor: pointer;
+  flex: 0 1 20px;
+  min-width: 20px;
+  height: 20px;
+
+  background-color: #ffffff;
+  border: 1px solid #0156ff;
+  border-radius: 50%;
+}
+.radiobuttons__label::after {
+  content: "";
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  background-color: #0156ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: transform 0.3s ease 0s;
+  transform: scale(0);
+}
+.content-summary__sub-title_margin {
+  margin-bottom: 5px;
+}
+.form-summary__button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0156ff;
+  background-color: #f5f7ff;
+  border: 1px solid #0156ff;
+  border-radius: 30px;
+  padding: 13px 0px 13px 0px;
+  min-width: 100%;
+  margin-top: 19px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.form-summary__button:focus {
+  outline: 1px solid #0156ff;
+  box-shadow: inset 1px 1px 15px rgba(1, 86, 255, 0.513);
+}
+.form-summary__button:hover {
+  background-color: #0156ff;
+  color: #ffffff;
+}
+
+.customers {
+  padding: 50px 0px 0px 0px;
+}
+.customers__content {
+  max-width: 564px;
+  background-color: #f5f7ff;
+  padding: 37px 57px 41px 57px;
+}
+.customers__body {
+}
+.customers__body:not(:last-child) {
+  margin-bottom: 7px;
+}
+.customers__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.customers__sub-title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 2.1;
+}
+.customers__form {
+  display: flex;
+}
+.form-customers {
+  flex: 0 1 100%;
+}
+.form-customers__line {
+  display: flex;
+  flex-direction: column;
+}
+.form-customers__line:not(:last-child) {
+  margin-bottom: 6px;
+}
+.form-customers__label {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 2.07;
+  color: #000;
+}
+.form-customers__label span {
+  color: #c94d3f;
+}
+.form-customers__input {
+  padding: 15px 17px 15px 17px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.42;
+  border: 1px solid #a2a6b0;
+  border-radius: 4px;
+}
+.form-customers__input:focus {
+  outline: 1px solid #a2a6b0;
+  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.376);
+}
+.form-customers__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 23px;
+}
+.form-customers__buttons:not(:first-child) {
+  margin-top: 30px;
+  cursor: pointer;
+}
+.form-customers__button {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  background: #0156ff;
+  border-radius: 50px;
+  padding: 15px 52px;
+  margin: 30px 23px 0px 0px;
+  transition: all 0.3s ease 0s;
+}
+.form-customers__button:focus {
+  outline: 1px solid #0156ff;
+  background-color: #ffffff;
+  color: #0156ff;
+  border: 1px solid #0156ff;
+}
+
+.form-customers__button:hover {
+  outline: 1px solid #0156ff;
+  background-color: #ffffff;
+  color: #0156ff;
+  border: 1px solid #0156ff;
+}
+
+.form-customers__link {
+  font-size: 14px;
+  line-height: 1.42;
+  color: #0156ff;
+  transition: all 0.3s ease 0s;
+}
+.form-customers__link:focus {
+  outline: none;
+  border-bottom: 1px solid #0156ff;
+}
+.form-customers__link:hover {
+  font-size: 16px;
+}
+
+.shipping {
+  margin: 50px 0px 50px 0px;
+  background-color: #ffffff;
+}
+.shipping__content {
+  padding: 45px 30px 87px 30px;
+  max-width: 924px;
+}
+.shipping__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #cacdd8;
+}
+.shipping__form {
+  margin-top: 25px;
+}
+.form-shipping {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.form-shipping__line {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  max-width: 565px;
+}
+.form-shipping__line:not(:last-child) {
+  margin: 0px 0px 11px 0px;
+}
+.form-shipping__label {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 2.07;
+  color: #000000;
+}
+.form-shipping__label span {
+  color: #c94d3f;
+}
+.form-shipping__input {
+  border: 1px solid #a2a6b0;
+  border-radius: 4px;
+  padding: 15px 17px 15px 17px;
+  font-size: 14px;
+  line-height: 1.42;
+}
+.form-shipping__input:focus {
+  outline: 1px solid #a2a6b0;
+  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.376);
+}
+.form-shipping__input:not(:last-child) {
+  margin: 0px 0px 11px 0px;
+}
+.form-shipping__checkout {
+  font-size: 13px;
+  line-height: 2.07;
+  color: #666666;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cacdd8;
+  max-width: 565px;
+  margin-bottom: 21px;
+}
+.form-shipping__select {
+  border: 1px solid #a2a6b0;
+  border-radius: 4px;
+  padding: 15px 17px 15px 17px;
+  font-size: 14px;
+  line-height: 1.42;
+  color: #000000;
+  cursor: pointer;
+}
+.form-shipping__select:focus {
+  cursor: pointer;
+  outline: 1px solid #a2a6b0;
+  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.376);
+}
+.form-shipping__radio {
+  padding-top: 20px;
+  border-top: 1px solid #cacdd8;
+}
+
+.form-shipping__radio:not(:last-child) {
+  margin-bottom: 45px;
+}
+.radiobuttons {
+  position: relative;
+}
+.radiobuttons__item {
+  display: flex;
+}
+.radiobuttons__item:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
+.radiobuttons__title {
+}
+.radiobuttons__input {
+}
+.radiobuttons__label {
+  flex: 0 1 684px;
+}
+.radiobuttons__price {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.42;
+  color: #000000;
+}
+.form-shipping__button {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  background: #0156ff;
+  border-radius: 50px;
+  padding: 15px 90px;
+  transition: all 0.3s ease 0s;
+  align-self: flex-start;
+}
+.form-shipping__button:focus {
+  outline: 1px solid #0156ff;
+  background-color: #ffffff;
+  color: #0156ff;
+  border: 1px solid #0156ff;
+}
+
+.form-shipping__button:hover {
+  outline: 1px solid #0156ff;
+  background-color: #ffffff;
+  color: #0156ff;
+  border: 1px solid #0156ff;
+}
