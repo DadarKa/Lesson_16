@@ -115,7 +115,7 @@ body {
 
 .appointment {
   padding: 130px 0px 210px 0px;
-  background: url(../img/CarRepairandDoggie/make_an/BG.png) 100% / cover no-repeat;
+  background: url(../img/CarRepairandDoggie/make_an/BG.png) center / cover no-repeat;
   color: #ffffff;
 }
 .appointment__container {
